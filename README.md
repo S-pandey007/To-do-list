@@ -73,9 +73,3 @@ The To-Do List Web Application is an easy-to-use tool for managing tasks. It off
 ### Contact:
 If you have any questions or suggestions, feel free to reach out at [shubhampandey8663@gmail.com].
 
-```
-
-### How to Use the `README.md`:
-- **Replace** `Shubham pandey` and `shubhampandey8663@gmail.com` with your GitHub username and email respectively.
-
-
