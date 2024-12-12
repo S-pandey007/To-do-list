@@ -1,0 +1,37 @@
+let inputBox = document.querySelector("#input-box")
+let btn = document.querySelector("#add-btn")
+let listContainer = document.getElementById("list-container")
+btn.addEventListener("click",function(){
+    if(inputBox.value ===''){
+        alert("Please Enter a Task")
+    }else{
+        let li= document.createElement("li")
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li)
+        let span = document.createElement("span")
+        span.innerHTML = "\u00d7";
+        li.appendChild(span)
+
+    }
+    inputBox.value="";
+    saveData()
+})
+
+listContainer.addEventListener("click",function(e){
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("checked");
+        saveData();
+    }else if(e.target.tagName==="SPAN"){
+        e.target.parentNode.remove()
+        saveData()
+    }
+})
+
+function saveData(){
+    localStorage.setItem("data",listContainer.innerHTML);
+}
+
+function showTask(){
+    listContainer.innerHTML= localStorage.getItem("data");
+}
+showTask()

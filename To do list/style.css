@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.to-do-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-do-app h2 {
+    /* color: #002765; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do-app h2 img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 2vh;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:linear-gradient(135deg, #153677, #4e085f);
+    color: #fff;
+    font-size: medium;
+    font-weight: lighter;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#task-container-list{
+    /* background-color: aqua; */
+}
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+#icon-holder {
+    /* background-color: #dd99ef; */
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#icon-holder i {
+    font-size: 2.4vh; /* Adjust size as needed */
+}
+
+ul {
+    flex: 1;
+    padding: 0;
+    margin: 0 10px;
+}
+
+ul li {
+    /* background-color: #002765; */
+    list-style: none;
+    font-size: 22px;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5px;
+    color: #000000;
+    margin-top: -3%;
+}
+
+/* ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+} */
+
+#cross-icon {
+    /* background-color: #ff5945; */
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#cross-icon i {
+    font-size: 3vh;
+}
